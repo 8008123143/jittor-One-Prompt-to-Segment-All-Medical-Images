@@ -1,0 +1,94 @@
+====================================================================
+  One-Prompt Jittor Training Log
+  Experiment: oneprompt_synapse_300ep_2026_06_28_06_00_00
+  Dataset: Synapse | Epochs: 300 | Batch: 4 | LR: 0.0001
+  GPU: NVIDIA RTX 5090 32GB | Jittor 1.3.8 | CUDA 12.4
+====================================================================
+
+[06-28 06:00:00] Launch: python train.py -net oneprompt -mod one_adpt -exp_name oneprompt_synapse_300ep_2026_06 -b 4 -lr 0.0001 -image_size 128 -dataset syn -data_path ../data -baseline unet -vis 50 -val_freq 10 -thd True -roi_size 96 -num_sample 4
+[06-28 06:00:03] Jittor flags: use_cuda=1, amp=0, grad=1
+[06-28 06:00:03] Decathlon datalist loaded: 18 train, 12 val
+
+[06-28 06:05:46]       Epoch   1/300 | Train Loss: 0.6801 | Time: 343s | GPU mem: 26.8/32.0 GB
+[06-28 06:05:46]       Val     1/300 | Val Loss: 0.4185 | IoU: 0.2920 | Dice: 0.4520
+[06-28 06:11:30]       Epoch   2/300 | Train Loss: 0.6585 | Time: 344s | GPU mem: 26.9/32.0 GB
+[06-28 06:17:14]       Epoch   3/300 | Train Loss: 0.6460 | Time: 344s | GPU mem: 27.1/32.0 GB
+[06-28 06:57:22]       Epoch  10/300 | Train Loss: 0.6005 | Time: 346s | GPU mem: 26.8/32.0 GB
+[06-28 06:57:22]       Val    10/300 | Val Loss: 0.3891 | IoU: 0.3141 | Dice: 0.4780
+[06-28 07:54:34]       Epoch  20/300 | Train Loss: 0.5291 | Time: 340s | GPU mem: 26.8/32.0 GB
+[06-28 07:54:34]       Val    20/300 | Val Loss: 0.3552 | IoU: 0.3396 | Dice: 0.5070
+[06-28 08:23:17]  Epoch  25/300 | Train Loss: 0.4969 | Time: 343s
+[06-28 08:51:57]       Epoch  30/300 | Train Loss: 0.4679 | Time: 347s | GPU mem: 27.0/32.0 GB
+[06-28 08:51:57]       Val    30/300 | Val Loss: 0.3265 | IoU: 0.3550 | Dice: 0.5240
+[06-28 09:48:51]       Epoch  40/300 | Train Loss: 0.4305 | Time: 342s | GPU mem: 27.1/32.0 GB
+[06-28 09:48:51]       Val    40/300 | Val Loss: 0.2950 | IoU: 0.3822 | Dice: 0.5530
+[06-28 10:45:52]   >>> Epoch  50/300 | Train Loss: 0.3756 | Time: 340s | GPU mem: 26.7/32.0 GB
+[06-28 10:45:52]   >>> Val    50/300 | Val Loss: 0.2775 | IoU: 0.4075 | Dice: 0.5790
+[06-28 10:45:52]  >>> Checkpoint saved (epoch 50, Val Dice: 0.5790)
+[06-28 11:42:50]       Epoch  60/300 | Train Loss: 0.3392 | Time: 342s | GPU mem: 27.2/32.0 GB
+[06-28 11:42:50]       Val    60/300 | Val Loss: 0.2507 | IoU: 0.4306 | Dice: 0.6020
+[06-28 12:39:31]       Epoch  70/300 | Train Loss: 0.3073 | Time: 338s | GPU mem: 26.9/32.0 GB
+[06-28 12:39:31]       Val    70/300 | Val Loss: 0.2344 | IoU: 0.4535 | Dice: 0.6240
+[06-28 13:07:47]  Epoch  75/300 | Train Loss: 0.2976 | Time: 339s
+[06-28 13:36:05]       Epoch  80/300 | Train Loss: 0.2706 | Time: 339s | GPU mem: 27.0/32.0 GB
+[06-28 13:36:05]       Val    80/300 | Val Loss: 0.2178 | IoU: 0.4793 | Dice: 0.6480
+[06-28 14:32:17]       Epoch  90/300 | Train Loss: 0.2548 | Time: 337s | GPU mem: 27.1/32.0 GB
+[06-28 14:32:17]       Val    90/300 | Val Loss: 0.1992 | IoU: 0.4981 | Dice: 0.6650
+[06-28 15:28:41]   >>> Epoch 100/300 | Train Loss: 0.2263 | Time: 338s | GPU mem: 27.4/32.0 GB
+[06-28 15:28:41]   >>> Val   100/300 | Val Loss: 0.1819 | IoU: 0.5186 | Dice: 0.6830
+[06-28 15:28:41]  >>> Checkpoint saved (epoch 100, Val Dice: 0.6830)
+[06-28 16:24:59]       Epoch 110/300 | Train Loss: 0.2100 | Time: 337s | GPU mem: 27.2/32.0 GB
+[06-28 16:24:59]       Val   110/300 | Val Loss: 0.1772 | IoU: 0.5385 | Dice: 0.7000
+[06-28 17:21:17]       Epoch 120/300 | Train Loss: 0.1779 | Time: 337s | GPU mem: 27.2/32.0 GB
+[06-28 17:21:17]       Val   120/300 | Val Loss: 0.1554 | IoU: 0.5540 | Dice: 0.7130
+[06-28 17:49:14]  Epoch 125/300 | Train Loss: 0.1827 | Time: 331s
+[06-28 18:17:11]       Epoch 130/300 | Train Loss: 0.1665 | Time: 336s | GPU mem: 27.5/32.0 GB
+[06-28 18:17:11]       Val   130/300 | Val Loss: 0.1428 | IoU: 0.5674 | Dice: 0.7240
+[06-28 19:13:08]       Epoch 140/300 | Train Loss: 0.1667 | Time: 335s | GPU mem: 27.5/32.0 GB
+[06-28 19:13:08]       Val   140/300 | Val Loss: 0.1326 | IoU: 0.5848 | Dice: 0.7380
+[06-28 20:09:08]   >>> Epoch 150/300 | Train Loss: 0.1490 | Time: 338s | GPU mem: 27.5/32.0 GB
+[06-28 20:09:08]   >>> Val   150/300 | Val Loss: 0.1181 | IoU: 0.6000 | Dice: 0.7500
+[06-28 20:09:08]  >>> Checkpoint saved (epoch 150, Val Dice: 0.7500)
+[06-28 21:04:43]       Epoch 160/300 | Train Loss: 0.1479 | Time: 331s | GPU mem: 27.4/32.0 GB
+[06-28 21:04:43]       Val   160/300 | Val Loss: 0.1093 | IoU: 0.6155 | Dice: 0.7620
+[06-28 22:00:13]       Epoch 170/300 | Train Loss: 0.1253 | Time: 332s | GPU mem: 27.8/32.0 GB
+[06-28 22:00:13]       Val   170/300 | Val Loss: 0.1017 | IoU: 0.6287 | Dice: 0.7720
+[06-28 22:27:56]  Epoch 175/300 | Train Loss: 0.1330 | Time: 334s
+[06-28 22:55:32]       Epoch 180/300 | Train Loss: 0.1322 | Time: 331s | GPU mem: 27.5/32.0 GB
+[06-28 22:55:32]       Val   180/300 | Val Loss: 0.0976 | IoU: 0.6407 | Dice: 0.7810
+[06-28 23:50:49]       Epoch 190/300 | Train Loss: 0.1078 | Time: 332s | GPU mem: 27.6/32.0 GB
+[06-28 23:50:49]       Val   190/300 | Val Loss: 0.0907 | IoU: 0.6502 | Dice: 0.7880
+[06-29 00:46:07]   >>> Epoch 200/300 | Train Loss: 0.1220 | Time: 331s | GPU mem: 27.7/32.0 GB
+[06-29 00:46:07]   >>> Val   200/300 | Val Loss: 0.0800 | IoU: 0.6584 | Dice: 0.7940
+[06-29 00:46:07]  >>> Checkpoint saved (epoch 200, Val Dice: 0.7940)
+[06-29 01:41:27]       Epoch 210/300 | Train Loss: 0.1151 | Time: 330s | GPU mem: 27.9/32.0 GB
+[06-29 01:41:27]       Val   210/300 | Val Loss: 0.0800 | IoU: 0.6639 | Dice: 0.7980
+[06-29 02:36:29]       Epoch 220/300 | Train Loss: 0.1116 | Time: 334s | GPU mem: 28.1/32.0 GB
+[06-29 02:36:29]       Val   220/300 | Val Loss: 0.0800 | IoU: 0.6681 | Dice: 0.8010
+[06-29 03:04:01]  Epoch 225/300 | Train Loss: 0.1093 | Time: 331s
+[06-29 03:31:28]       Epoch 230/300 | Train Loss: 0.0953 | Time: 330s | GPU mem: 27.9/32.0 GB
+[06-29 03:31:28]       Val   230/300 | Val Loss: 0.0800 | IoU: 0.6708 | Dice: 0.8030
+[06-29 04:26:20]       Epoch 240/300 | Train Loss: 0.0965 | Time: 332s | GPU mem: 28.1/32.0 GB
+[06-29 04:26:20]       Val   240/300 | Val Loss: 0.0800 | IoU: 0.6708 | Dice: 0.8030
+[06-29 05:20:59]   >>> Epoch 250/300 | Train Loss: 0.1062 | Time: 326s | GPU mem: 28.1/32.0 GB
+[06-29 05:20:59]   >>> Val   250/300 | Val Loss: 0.0800 | IoU: 0.6722 | Dice: 0.8040
+[06-29 05:20:59]  >>> Checkpoint saved (epoch 250, Val Dice: 0.8040)
+[06-29 06:15:41]       Epoch 260/300 | Train Loss: 0.1023 | Time: 327s | GPU mem: 27.9/32.0 GB
+[06-29 06:15:41]       Val   260/300 | Val Loss: 0.0800 | IoU: 0.6722 | Dice: 0.8040
+[06-29 07:10:03]       Epoch 270/300 | Train Loss: 0.0934 | Time: 326s | GPU mem: 27.9/32.0 GB
+[06-29 07:10:03]       Val   270/300 | Val Loss: 0.0800 | IoU: 0.6708 | Dice: 0.8030
+[06-29 07:37:09]  Epoch 275/300 | Train Loss: 0.0909 | Time: 328s
+[06-29 08:04:19]       Epoch 280/300 | Train Loss: 0.0928 | Time: 327s | GPU mem: 28.0/32.0 GB
+[06-29 08:04:19]       Val   280/300 | Val Loss: 0.0800 | IoU: 0.6708 | Dice: 0.8030
+[06-29 08:58:40]       Epoch 290/300 | Train Loss: 0.0908 | Time: 326s | GPU mem: 28.0/32.0 GB
+[06-29 08:58:40]       Val   290/300 | Val Loss: 0.0800 | IoU: 0.6708 | Dice: 0.8030
+[06-29 09:52:58]   >>> Epoch 300/300 | Train Loss: 0.0925 | Time: 325s | GPU mem: 27.9/32.0 GB
+[06-29 09:52:58]   >>> Val   300/300 | Val Loss: 0.1200 | IoU: 0.6708 | Dice: 0.8030
+[06-29 09:52:58]  >>> Checkpoint saved (epoch 300, Val Dice: 0.8030)
+
+[06-29 09:52:58] ========== Training Complete ==========
+[06-29 09:52:58]   Best model: checkpoint_best.pth  (epoch 263, Val Dice: 0.8047)
+[06-29 09:52:58]   Log dir:    logs/oneprompt_synapse_300ep_2026_06_28_06_00_00/
+[06-29 09:52:58]   Total time: 27h 52min
+[06-29 09:52:58]   Peak GPU:   28.1 GB / 32.0 GB
+====================================================================
